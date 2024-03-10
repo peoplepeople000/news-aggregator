@@ -1,0 +1,92 @@
+[debug] [2024-03-10T17:28:09.321Z] ----------------------------------------------------------------------
+[debug] [2024-03-10T17:28:09.323Z] Command:       /Users/jim/.nvm/versions/node/v20.11.1/bin/node /usr/local/bin/firebase init
+[debug] [2024-03-10T17:28:09.323Z] CLI Version:   13.1.0
+[debug] [2024-03-10T17:28:09.323Z] Platform:      darwin
+[debug] [2024-03-10T17:28:09.323Z] Node Version:  v20.11.1
+[debug] [2024-03-10T17:28:09.323Z] Time:          Mon Mar 11 2024 01:28:09 GMT+0800 (中部標準時間)
+[debug] [2024-03-10T17:28:09.323Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-10T17:28:09.324Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-03-10T17:28:09.344Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-10T17:28:09.344Z] > authorizing via signed-in user (jim901219@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/jim/react_project/news-aggregator
+
+[debug] [2024-03-10T17:28:09.727Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-03-10T17:28:09.728Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-10T17:30:42.881Z] > refreshing access token with scopes: []
+[debug] [2024-03-10T17:30:42.883Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-10T17:30:42.884Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-10T17:30:42.972Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-10T17:30:42.972Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-10T17:30:42.984Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-03-10T17:30:43.483Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-03-10T17:30:43.484Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project newsapp-d1a84 (newsApp) 
+[info] 
+=== Hosting Setup
+[debug] [2024-03-10T17:30:47.003Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/newsapp-d1a84 [none]
+[debug] [2024-03-10T17:30:47.266Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/newsapp-d1a84 200
+[debug] [2024-03-10T17:30:47.266Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/newsapp-d1a84 {"projectId":"newsapp-d1a84","projectNumber":"782691439601","displayName":"newsApp","name":"projects/newsapp-d1a84","resources":{"hostingSite":"newsapp-d1a84"},"state":"ACTIVE","etag":"1_07810577-98e6-458f-b90a-469ee41712de"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-03-10T17:33:36.315Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-03-10T17:33:36.369Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-03-10T17:33:36.369Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.1","browserURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/jim/react_project/news-aggregator 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=412745320&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-03-10T17:33:52.681Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-03-10T17:33:52.682Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-03-10T17:33:53.223Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-03-10T17:33:53.223Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-03-10T17:33:53.234Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-03-10T17:33:53.821Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-03-10T17:33:53.821Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"peoplepeople000","id":107465871,"node_id":"U_kgDOBmfMjw","avatar_url":"https://avatars.githubusercontent.com/u/107465871?v=4","gravatar_id":"","url":"https://api.github.com/users/peoplepeople000","html_url":"https://github.com/peoplepeople000","followers_url":"https://api.github.com/users/peoplepeople000/followers","following_url":"https://api.github.com/users/peoplepeople000/following{/other_user}","gists_url":"https://api.github.com/users/peoplepeople000/gists{/gist_id}","starred_url":"https://api.github.com/users/peoplepeople000/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/peoplepeople000/subscriptions","organizations_url":"https://api.github.com/users/peoplepeople000/orgs","repos_url":"https://api.github.com/users/peoplepeople000/repos","events_url":"https://api.github.com/users/peoplepeople000/events{/privacy}","received_events_url":"https://api.github.com/users/peoplepeople000/received_events","type":"User","site_admin":false,"name":"Jim Lo","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2022-06-14T08:16:15Z","updated_at":"2024-03-09T13:36:16Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":8775,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as peoplepeople000 
+[info] 
+[debug] [2024-03-10T17:34:18.191Z] >>> [apiv2][query] GET https://api.github.com/repos/q/actions/secrets/public-key type=owner
+[debug] [2024-03-10T17:34:18.693Z] <<< [apiv2][status] GET https://api.github.com/repos/q/actions/secrets/public-key 404
+[debug] [2024-03-10T17:34:18.693Z] <<< [apiv2][body] GET https://api.github.com/repos/q/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] ⚠  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-03-10T17:34:18.762Z] >>> [apiv2][query] GET https://api.github.com/repos/q/actions/secrets/public-key type=owner
+[debug] [2024-03-10T17:34:19.072Z] <<< [apiv2][status] GET https://api.github.com/repos/q/actions/secrets/public-key 404
+[debug] [2024-03-10T17:34:19.072Z] <<< [apiv2][body] GET https://api.github.com/repos/q/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] ⚠  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 

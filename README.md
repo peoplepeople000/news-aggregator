@@ -5,4 +5,4 @@ This project is a news aggregator that connects to the NewsAPI. Due to the prici
 
 
 # Tools
-Typescript, create-react-app, React
+Typescript, create-react-app, React, Tailwind CSS, NextUI

@@ -9,23 +9,44 @@ const App: React.FC = () => {
 
   if (isLoading) {
     return (
-      <div>
-        <p>Loading...</p>
-        <Spinner/>
+      <div className="app-shell loading-state">
+        <div className="loading-panel">
+          <Spinner size="lg" />
+          <p>Gathering the latest headlines...</p>
+        </div>
       </div>
     );
   }
 
   if (isError) {
-    return <p>Error fetching top headlines</p>;
+    return (
+      <div className="app-shell">
+        <main className="content-frame">
+          <section className="empty-state">
+            <p className="eyebrow">Newswire offline</p>
+            <h1>We could not load the latest headlines.</h1>
+            <p>Please check the News API key or try again in a moment.</p>
+          </section>
+        </main>
+      </div>
+    );
   }
 
-  console.log(data);
-
   return (
-    <div>
-      <p className='text-7xl text-center font-serif'>Recent News</p>
-      <NewsDisplay news={data} />
+    <div className="app-shell">
+      <main className="content-frame">
+        <header className="masthead">
+          <div>
+            <p className="eyebrow">Live briefing</p>
+            <h1>Recent News</h1>
+          </div>
+          <p className="masthead-copy">
+            A cleaner scan of today&apos;s top stories from the U.S. newswire.
+          </p>
+        </header>
+
+        <NewsDisplay news={data ?? []} />
+      </main>
     </div>
   );
 };
